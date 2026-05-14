@@ -1,0 +1,53 @@
+exp_num,phase,rmse,label,decision
+0,Phase 0,0.09534,Baseline Test,BASELINE
+1,Phase 1,0.047157,Ridge_alpha1,KEPT
+2,Phase 1,0.046153,Ridge_alpha10,KEPT
+3,Phase 1,0.047323,Ridge_median,DISCARDED
+4,Phase 1,0.035011,Lasso_alpha0.1,KEPT
+5,Phase 1,0.041588,Lasso_alpha0.01,KEPT
+6,Phase 1,0.036339,ElasticNet_alpha0.1,KEPT
+7,Phase 1,0.046495,RandomForest_n10,KEPT
+8,Phase 1,0.044218,RandomForest_n50,KEPT
+9,Phase 1,0.046882,GradBoost_n10,KEPT
+10,Phase 1,0.051185,SVR_linear,DISCARDED
+11,Phase 1,0.054217,SVR_rbf,DISCARDED
+12,Phase 1,0.045711,Ridge_knnImp,KEPT
+13,Phase 2,0.046153,Ridge_alpha10+raw,KEPT
+14,Phase 2,0.035011,Lasso_alpha0.1+raw,KEPT
+15,Phase 2,0.036339,ElasticNet_alpha0.1+raw,KEPT
+16,Phase 2,0.044218,RandomForest_n50+raw,KEPT
+17,Phase 2,0.046882,GradBoost_n10+raw,KEPT
+18,Phase 2,0.042368,Ridge_alpha10+standard,KEPT
+19,Phase 2,0.056547,Lasso_alpha0.1+standard,DISCARDED
+20,Phase 2,0.056547,ElasticNet_alpha0.1+standard,DISCARDED
+21,Phase 2,0.04301,RandomForest_n50+standard,KEPT
+22,Phase 2,0.046524,GradBoost_n10+standard,KEPT
+23,Phase 2,0.037189,Ridge_alpha10+log_tran,KEPT
+24,Phase 2,0.056547,Lasso_alpha0.1+log_tran,DISCARDED
+25,Phase 2,0.056547,ElasticNet_alpha0.1+log_tran,DISCARDED
+26,Phase 2,0.044448,RandomForest_n50+log_tran,KEPT
+27,Phase 2,0.046603,GradBoost_n10+log_tran,KEPT
+28,Phase 2,0.039873,Ridge_alpha10+log_stan,KEPT
+29,Phase 2,0.056547,Lasso_alpha0.1+log_stan,DISCARDED
+30,Phase 2,0.056547,ElasticNet_alpha0.1+log_stan,DISCARDED
+31,Phase 2,0.043367,RandomForest_n50+log_stan,KEPT
+32,Phase 2,0.045083,GradBoost_n10+log_stan,KEPT
+33,Phase 3,0.037575,Remove:NONE,KEPT
+34,Phase 3,0.047965,Remove:Adult diabetes,DISCARDED
+35,Phase 3,0.037152,Remove:Employment-based hea,KEPT
+36,Phase 3,0.036427,Remove:Annual dental cleani,KEPT
+37,Phase 3,0.037222,Remove:Primary care provide,KEPT
+38,Phase 3,0.037318,Remove:Routine checkup rate,KEPT
+39,Phase 3,0.037415,Remove:Health care satisfac,KEPT
+40,Phase 3,0.036775,Remove:Eviction rate,KEPT
+41,Phase 3,0.037189,Remove:Adult loneliness rat,KEPT
+42,Phase 3,0.037473,Remove:Moderate or serious ,KEPT
+43,Phase 3,0.037091,Remove:unmet mh trt mod to ,KEPT
+44,Phase 3,0.037357,Remove:unmet mh trt mod to ,KEPT
+45,Phase 3,0.038067,Remove:Hypertension rate,KEPT
+46,Phase 3,0.038239,Remove:Median household inc,KEPT
+47,Phase 3,0.037245,Remove:Hardship Index,KEPT
+48,Phase 3,0.036571,"Remove:Demographics, White",KEPT
+49,Phase 3,0.037186,Remove:Ambulatory difficult,KEPT
+50,Phase 3,0.045158,Remove:population,DISCARDED
+51,Phase 3,0.035509,Remove:Annual dental cleani,KEPT
