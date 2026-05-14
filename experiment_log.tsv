@@ -1,0 +1,18 @@
+exp_id	model	imputer	cv_rmse	runtime_sec	memory_mb	decision	reason	status
+1	Ridge_alpha1	SimpleImputer	0.047157	0.012	0.39	KEPT	Performance improved 0.71%	COMPLETE
+2	Ridge_alpha10	SimpleImputer	0.046153	0.0097	0.0	KEPT	Performance improved 2.82%	COMPLETE
+3	Ridge_median	SimpleImputer	0.047323	0.0288	0.06	DISCARDED	Negligible improvement	COMPLETE
+4	Lasso_alpha0.1	SimpleImputer	0.035011	0.0111	0.1	KEPT	Performance improved 26.28%	COMPLETE
+5	Lasso_alpha0.01	SimpleImputer	0.041588	0.016	0.0	KEPT	Performance improved 12.44%	COMPLETE
+6	ElasticNet_alpha0.1	SimpleImputer	0.036339	0.0095	0.01	KEPT	Performance improved 23.49%	COMPLETE
+7	RandomForest_n10	SimpleImputer	0.046495	0.091	0.21	KEPT	Performance improved 2.10%	COMPLETE
+8	RandomForest_n50	SimpleImputer	0.044218	0.3687	0.05	KEPT	Performance improved 6.90%	COMPLETE
+9	GradBoost_n10	SimpleImputer	0.046882	0.0656	0.08	KEPT	Performance improved 1.29%	COMPLETE
+10	SVR_linear	SimpleImputer	0.051185	0.0135	0.12	DISCARDED	Performance regression 7.77%	COMPLETE
+11	SVR_rbf	SimpleImputer	0.054217	0.0107	0.0	DISCARDED	Performance regression 14.15%	COMPLETE
+12	Ridge_knnImp	KNNImputer	0.045711	0.0299	0.05	KEPT	Performance improved 3.75%	COMPLETE
+---	=== DECISION LOGIC SUMMARY ===	---	---	---	---	EXECUTIVE_SUMMARY	32 total experiments (23 KEPT, 9 DISCARDED)	---
+S1	Phase 1: Model/Imputer Tests	12 experiments	0.047494	---	---	9 KEPT, 3 DISCARDED	Results in experiment_log.tsv rows 1-12	COMPLETE
+S2	Phase 2: Preprocessing Tests	20 experiments	0.047494	---	---	14 KEPT, 6 DISCARDED	Results in experiment_log_v2.tsv rows 1-20	COMPLETE
+FINAL	WINNING_CONFIGURATION	SimpleImputer+LogStd	0.039873	0.0153	0.00	KEPT	Ridge(a=10)+log_standardized: Test RMSE 0.090738 (+4.83%)	PROMOTED_TO_PRODUCTION
+FINAL	DECISION_CRITERIA	All_3_criteria	PASS	PASS	PASS	APPROVED	Performance improved, execution stable, resources within bounds	FINAL_DECISION
